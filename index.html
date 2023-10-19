@@ -13,12 +13,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a6d9640390.js" crossorigin="anonymous"></script>
 
     <!-- CSS Styles -->
     <style>
         .lato
         {
             font-family: 'Lato', sans-serif;
+        }
+        .custom-dropdown {
+             position: absolute;
+              right: 0;
         }
     </style>
     
@@ -36,7 +42,48 @@
       </script>
 
 </head>
-<body>
+<body class="p-2">
+  <header class="container mx-auto">
+    <nav>
+    <div class="navbar lg:bg-[#F85559] lg:text-white rounded-[600px]">
+      <div class="navbar-center hidden lg:flex ">
+        <ul class="menu menu-horizontal px-6 space-x-5 lato">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>All Fruits</li>
+        </ul>
+      </div>  
+      <div class="navbar-start lg:mx-auto flex justify-center ml-4" >
+        <img src="images/logo.png" class="w-12" alt="">
+        <a class="btn btn-ghost normal-case text-xl font-bold">Fruit Brust</a>
+      </div>
+      <div class="  ">
+        <div class="form-control hidden md:block">
+          <input type="text" placeholder="Search" class="input input-bordered w-[300px]  mr-5 rounded-[50px]" />
+        </div>
+        <div class="dropdown dropdown-end lg:hidden ">
+          <label tabindex="0" class="btn m-1"><i class="fa-solid fa-caret-down"></i></label>
+          <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-3">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Contact Us</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+      
+      </div>
+    </div>
+    </nav>
+    
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
     
 </body>
 </html> 
+
